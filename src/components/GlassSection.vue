@@ -10,7 +10,7 @@ defineSlots<{
   <div class="relative">
     <!-- Full width dark frosted glass background -->
     <div
-      class="absolute inset-y-0 bg-black/100 z-20"
+      class="absolute inset-y-0 bg-black/100 z-20 border-t border-b border-[#fc3113]"
       style="left: calc(-50vw + 50%); right: calc(-50vw + 50%)"
     ></div>
 

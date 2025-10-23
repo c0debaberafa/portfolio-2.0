@@ -21,11 +21,11 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     ]"
   >
     <div
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      class="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between"
     >
       <!-- Logo / Name -->
       <div class="flex items-center gap-2">
-        <img src="/tora-white.png" alt="Logo" class="w-8 h-8" />
+        <img src="/tora-orange.png" alt="Logo" class="w-8 h-8" />
       </div>
 
       <!-- Nav Links -->

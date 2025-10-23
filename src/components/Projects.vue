@@ -107,7 +107,7 @@ const projects = ref<Project[]>([
 </script>
 
 <template>
-  <section class="relative flex flex-col h-full justify-center">
+  <section class="scroll-mt-20 relative flex flex-col h-full justify-center">
     <!-- Title -->
     <h1
       class="text-4xl sm:text-6xl text-center md:text-left text-[#fc3113] mix-blend-difference"
@@ -205,7 +205,7 @@ const projects = ref<Project[]>([
 
           <!-- Writeup -->
           <p
-            class="text-xs text-white/60 leading-relaxed"
+            class="text-xs text-white leading-relaxed"
             :style="{ fontFamily: 'JetBrains Mono' }"
           >
             {{ project.description }}

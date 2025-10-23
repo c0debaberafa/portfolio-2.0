@@ -8,7 +8,7 @@ type TechCategory =
   | "backend"
   | "tools"
   | "mobile"
-  | "ml"
+  | "ai/ml"
   | "design"
   | "db"
   | "testing"
@@ -24,7 +24,7 @@ const techItems = ref<TechItem[]>([
   {
     name: "Python",
     imgSrc: "/techstack/python.svg",
-    categories: ["backend", "languages"],
+    categories: ["backend", "languages", "ai/ml"],
   },
   {
     name: "C++",
@@ -100,7 +100,7 @@ const techItems = ref<TechItem[]>([
   {
     name: "TensorFlow",
     imgSrc: "/techstack/tensorflow.svg",
-    categories: ["ml"],
+    categories: ["ai/ml"],
   },
   {
     name: "Next.js",
@@ -160,6 +160,11 @@ const techItems = ref<TechItem[]>([
     categories: ["languages"],
   },
   {
+    name: "OpenAI",
+    imgSrc: "/techstack/chatgpt.svg",
+    categories: ["ai/ml"],
+  },
+  {
     name: "Pinia",
     imgSrc: "/techstack/pinia.svg",
     categories: ["frontend"],
@@ -169,7 +174,8 @@ const selectedCategory = ref<TechCategory | "all">("all");
 const categories = computed(() => {
   const set = new Set<TechCategory>();
   techItems.value.forEach((t) => t.categories.forEach((c) => set.add(c)));
-  return ["all", ...Array.from(set)];
+  const sortedCategories = Array.from(set).sort();
+  return ["all", ...sortedCategories];
 });
 const filteredTech = computed(() => {
   if (selectedCategory.value === "all") return techItems.value;

@@ -44,7 +44,7 @@ const selectedWCategory = ref<(typeof wCategories)[number]>("Technologist");
 
 <template>
   <section
-    class="min-h-screen flex justify-center md:justify-end items-end pb-16 px-4"
+    class="scroll-mt-20 min-h-screen flex justify-center md:justify-end items-end pb-8 md:pb-16 px-4"
   >
     <!-- <p
       class="absolute top-20 right-8 text-right text-sm text-white/40 mix-blend-difference z-10"
@@ -105,7 +105,10 @@ const selectedWCategory = ref<(typeof wCategories)[number]>("Technologist");
       <div
         class="bg-black/90 backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg px-4 py-3 transition duration-8000 ease-in-out mt-4 w-full min-h-32"
       >
-        <div class="text-left" :style="{ fontFamily: 'JetBrains Mono' }">
+        <div
+          class="text-left text-md md:text-md"
+          :style="{ fontFamily: 'JetBrains Mono' }"
+        >
           {{ writeups[selectedWCategory] }}
         </div>
       </div>

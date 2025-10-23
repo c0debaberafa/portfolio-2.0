@@ -60,7 +60,7 @@ const experiences: Experience[] = [
     description:
       "Rebuilt lightweight frontend systems powering <span class='text-[#fc3113]'>2,000+ monthly client interactions</span>. Designed scalable content systems clients could independently manage. Directed creative production for digital assets, generating <span class='text-[#fc3113]'>1.5M+ views</span>.",
     skills: ["JavaScript", "HTML", "CSS", "Adobe Suite", "Figma"],
-    location: ["Philippines", "Singapore", "Malaysia"],
+    location: ["Malaysia", "Philippines", "Singapore"],
   },
   {
     id: "2",
@@ -107,7 +107,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="min-h-screen">
+  <section class="scroll-mt-20 min-h-screen">
     <div class="w-full">
       <div class="w-full">
         <!-- Header -->
@@ -120,7 +120,12 @@ onMounted(() => {
         <div class="w-full h-px border-[#fc3113] bg-[#fc3113]/80"></div>
 
         <!-- Experience Items -->
-        <div class="">
+        <div class="relative">
+          <!-- Vertical line for small screens (centered timeline) -->
+          <div
+            class="md:hidden absolute w-0.5 bg-[#fc3113] z-0 left-1/2 transform -translate-x-1/2 top-0 bottom-0"
+          ></div>
+
           <div
             v-for="(exp, index) in experiences"
             :key="exp.id"
@@ -137,7 +142,7 @@ onMounted(() => {
 
               <!-- Time Badge -->
               <span
-                class="bg-[#fc3113] text-black border border-[#fc3113]/30 px-3 py-1 rounded-full text-xs font-mono font-bold"
+                class="bg-[#fc3113] text-black border border-[#fc3113]/30 px-3 py-1 rounded-full text-xs font-mono font-bold relative z-10"
                 style="font-family: 'JetBrains Mono', monospace"
               >
                 {{ exp.time }}
@@ -169,7 +174,7 @@ onMounted(() => {
             <!-- Experience Card -->
             <div
               :ref="(el) => (cardRefs[index] = el)"
-              class="md:ml-6 ml-0 bg-black/80 backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg group/card relative p-4"
+              class="md:ml-6 ml-0 bg-black backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg group/card relative p-4 z-10"
             >
               <div
                 class="flex flex-col md:flex-row md:items-start items-center"
@@ -198,7 +203,7 @@ onMounted(() => {
                             :href="companyLinks[exp.company]"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:text-[#fc3113] text-white font-bold transition-colors"
+                            class="hover:text-[#fc3113] text-white font-bold text-xl transition-colors"
                             @click.stop
                           >
                             {{ exp.company }}
@@ -207,12 +212,12 @@ onMounted(() => {
                         </h3>
                         <h3
                           v-else
-                          class="md:text-left text-center text-2xl font-bold text-white"
+                          class="md:text-left text-center text-xl font-bold text-white"
                         >
                           {{ exp.company }}
                         </h3>
                         <span
-                          class="block md:text-left text-center text-xl text-white font-regular"
+                          class="block md:text-left text-center text-lg text-white font-regular"
                         >
                           {{ exp.title }}
                         </span>
@@ -245,11 +250,11 @@ onMounted(() => {
                           class="flex items-start gap-2 mb-1"
                         >
                           <span
-                            class="text-white/60 font-mono text-sm mt-1 flex-shrink-0"
+                            class="text-white font-mono text-sm mt-1 flex-shrink-0"
                             >•</span
                           >
                           <span
-                            class="text-white/80 leading-relaxed font-mono"
+                            class="text-white leading-relaxed font-mono"
                             style="font-family: 'JetBrains Mono', monospace"
                             v-html="sentence"
                           />

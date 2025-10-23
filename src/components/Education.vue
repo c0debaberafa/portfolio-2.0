@@ -15,7 +15,7 @@ const education: Education[] = [
     school: "University of the Philippines - Diliman",
     logo: "/up-seal.png",
     link: "https://upd.edu.ph/",
-    time: "Graduated July 2025",
+    time: "Graduated 07.2025",
     course: "BS Computer Science",
     award: "Distinction in Leadership as CS Department Representative",
   },
@@ -24,7 +24,7 @@ const education: Education[] = [
     school: "Philippine Science High School - Main Campus",
     logo: "/pshs-logo.png",
     link: "https://pshs.edu.ph/",
-    time: "Graduated July 2018",
+    time: "Graduated 07.2018",
     course: "Secondary Diploma - STEM",
     award: "Distinction in Leadership as founder of CS organization",
   },
@@ -32,18 +32,23 @@ const education: Education[] = [
 </script>
 
 <template>
-  <section class="">
+  <section id="education" class="scroll-mt-20">
     <div>
       <h1
-        class="text-4xl sm:text-6xl text-left text-[#fc3113] mix-blend-difference"
+        class="text-4xl sm:text-6xl text-center md:text-left text-[#fc3113] mix-blend-difference"
         :style="{ fontFamily: 'Akira' }"
       >
         EDUCATION
       </h1>
       <div class="w-full h-px border-[#fc3113] bg-[#fc3113]/80"></div>
     </div>
-    <!-- Experience Items -->
-    <div class="">
+    <!-- Education Items -->
+    <div class="relative">
+      <!-- Vertical line for small screens (centered timeline) -->
+      <div
+        class="md:hidden absolute w-0.5 bg-[#fc3113] z-0 left-1/2 transform -translate-x-1/2 top-0 bottom-0"
+      ></div>
+
       <div
         v-for="(item, index) in education"
         :key="item.id"
@@ -60,19 +65,19 @@ const education: Education[] = [
 
           <!-- Time Badge -->
           <span
-            class="bg-[#fc3113] text-black border border-[#fc3113]/30 px-3 py-1 rounded-full text-xs font-mono font-bold"
+            class="bg-[#fc3113] text-black border border-[#fc3113]/30 px-3 py-1 rounded-full text-xs font-mono font-bold relative z-10"
             style="font-family: 'JetBrains Mono', monospace"
           >
             {{ item.time }}
           </span>
         </div>
         <div
-          class="flex items-center gap-4 mb-4 md:justify-start justify-center md:hidden"
+          class="flex items-center gap-4 md:justify-start justify-center md:hidden"
         ></div>
 
         <!-- Education Card -->
         <div
-          class="md:ml-6 ml-0 bg-black/80 backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg group/card relative p-4"
+          class="md:ml-6 ml-0 bg-black backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg group/card relative p-4 z-10"
         >
           <div class="flex flex-col md:flex-row md:items-start items-center">
             <div class="flex flex-row items-start"></div>
@@ -92,7 +97,7 @@ const education: Education[] = [
                   </div>
                   <div class="flex flex-col md:ml-4 justify-center">
                     <h3
-                      class="md:text-left text-center text-2xl font-bold text-white flex items-center gap-1 md:justify-start justify-center"
+                      class="md:text-left text-center text-xl font-bold text-white flex items-center gap-1 md:justify-start justify-center"
                     >
                       <a
                         :href="item.link"
@@ -106,7 +111,7 @@ const education: Education[] = [
                       <PhLinkSimple :size="16" class="text-[#fc3113]" />
                     </h3>
                     <span
-                      class="block md:text-left text-center text-xl text-white font-regular"
+                      class="block md:text-left text-center text-white text-lg font-regular"
                     >
                       {{ item.course }}
                     </span>
