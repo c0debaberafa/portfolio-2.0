@@ -56,7 +56,7 @@ const selectedWCategory = ref<(typeof wCategories)[number]>("Technologist");
       >
     </p> -->
     <div
-      class="flex flex-col justify-end h-full items-center md:items-start w-full md:max-w-none"
+      class="flex flex-col justify-end h-full items-center lg:items-start w-full md:max-w-none"
     >
       <div class="flex flex-col items-center">
         <img
@@ -64,7 +64,7 @@ const selectedWCategory = ref<(typeof wCategories)[number]>("Technologist");
           alt="Rafa Photo"
           class="w-32 h-32 rounded-full border-2 border-black/20"
         />
-        <div class="flex gap-4 mt-2">
+        <div class="flex gap-2 sm:gap-4 mt-2">
           <PhEnvelopeSimple
             :size="24"
             class="text-white/40 hover:text-[#fc3113]"
@@ -78,15 +78,11 @@ const selectedWCategory = ref<(typeof wCategories)[number]>("Technologist");
         </div>
       </div>
       <h1
-        class="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] text-center lg:text-left text-white mix-blend-difference"
+        class="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] text-center lg:text-left text-white mix-blend-difference text-shadow-xl text-shadow-white"
         :style="{ fontFamily: 'Akira' }"
       >
         Rafa
-      </h1>
-      <h1
-        class="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] text-center lg:text-left text-white mix-blend-difference"
-        :style="{ fontFamily: 'Akira' }"
-      >
+        <br />
         Partosa
       </h1>
       <div class="w-full h-px border-[#fc3113] bg-[#fc3113]/80 mb-4"></div>
@@ -107,7 +103,7 @@ const selectedWCategory = ref<(typeof wCategories)[number]>("Technologist");
         </button>
       </div>
       <div
-        class="bg-black/80 backdrop-blur-md hover:backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg px-4 py-3 transition duration-8000 ease-in-out mt-4 w-full min-h-32"
+        class="bg-black/90 backdrop-blur-lg border border-[#fc3113]/80 rounded-xl shadow-lg px-4 py-3 transition duration-8000 ease-in-out mt-4 w-full min-h-32"
       >
         <div class="text-left" :style="{ fontFamily: 'JetBrains Mono' }">
           {{ writeups[selectedWCategory] }}

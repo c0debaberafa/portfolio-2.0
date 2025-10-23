@@ -107,10 +107,10 @@ const projects = ref<Project[]>([
 </script>
 
 <template>
-  <section class="relative flex flex-col h-full justify-center pt-16">
+  <section class="relative flex flex-col h-full justify-center">
     <!-- Title -->
     <h1
-      class="text-4xl sm:text-6xl text-left text-[#fc3113] mix-blend-difference"
+      class="text-4xl sm:text-6xl text-center md:text-left text-[#fc3113] mix-blend-difference"
       :style="{ fontFamily: 'Akira' }"
     >
       PROJECTS
@@ -201,7 +201,7 @@ const projects = ref<Project[]>([
           </div>
 
           <!-- Divider -->
-          <div class="border-t border-white/10"></div>
+          <div class="border-t border-[#fc3113]/40"></div>
 
           <!-- Writeup -->
           <p
@@ -286,7 +286,7 @@ const projects = ref<Project[]>([
           </div>
 
           <!-- Divider -->
-          <div class="border-t border-white/10"></div>
+          <div class="border-t border-[#fc3113]/40"></div>
 
           <!-- Writeup -->
           <p
@@ -451,7 +451,7 @@ const projects = ref<Project[]>([
           </div>
 
           <!-- Divider -->
-          <div class="border-t border-white/10"></div>
+          <div class="border-t border-[#fc3113]/40"></div>
 
           <!-- Writeup -->
           <p

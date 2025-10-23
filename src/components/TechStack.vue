@@ -184,7 +184,7 @@ const filteredTech = computed(() => {
   <section class="relative flex flex-col justify-center">
     <!-- Title -->
     <h1
-      class="mt-16 text-4xl sm:text-6xl text-left text-[#fc3113] mix-blend-difference"
+      class="text-4xl sm:text-6xl text-center md:text-left text-[#fc3113] mix-blend-difference"
       :style="{ fontFamily: 'Akira' }"
     >
       TECH STACK
@@ -192,7 +192,9 @@ const filteredTech = computed(() => {
     <div class="w-full h-px border-[#fc3113] bg-[#fc3113]/80 mb-4"></div>
 
     <!-- Category buttons -->
-    <div class="flex gap-2 mb-2 flex-wrap">
+    <div
+      class="flex gap-2 mb-2 flex-wrap items-center justify-center md:justify-start"
+    >
       <button
         v-for="cat in categories"
         :key="cat as string"
