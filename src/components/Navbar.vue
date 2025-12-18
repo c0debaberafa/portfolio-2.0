@@ -16,7 +16,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     :class="[
       'fixed top-0 left-0 w-full z-50 transition-all duration-300',
       scrolled
-        ? 'bg-black/50 backdrop-blur-lg border-b border-white/10'
+        ? 'bg-black/50 backdrop-blur-lg border-b border-[#fc3113]/40'
         : ' border-white/10',
     ]"
   >
@@ -29,34 +29,35 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
       </div>
 
       <!-- Nav Links -->
-      <div class="hidden md:flex gap-6">
+      <div class="hidden md:flex items-center gap-6">
         <a
           href="#about"
-          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200"
+          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200 flex items-center"
           :style="{ fontFamily: 'JetBrains Mono' }"
         >
           About
         </a>
         <a
           href="#projects"
-          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200"
+          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200 flex items-center"
           :style="{ fontFamily: 'JetBrains Mono' }"
         >
           Projects
         </a>
         <a
           href="#experience"
-          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200"
+          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200 flex items-center"
           :style="{ fontFamily: 'JetBrains Mono' }"
         >
           Experience
         </a>
         <a
-          href="#contact"
-          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200"
+          href="/resume.pdf"
+          download
+          class="text-white/80 hover:text-[#fc3113] transition-colors duration-200 border border-white/20 hover:border-[#fc3113] px-4 py-2 rounded-full flex items-center"
           :style="{ fontFamily: 'JetBrains Mono' }"
         >
-          Contact
+          Download Resume
         </a>
       </div>
 

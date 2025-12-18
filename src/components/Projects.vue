@@ -31,6 +31,19 @@ const closeModal = () => {
 const projects = ref<Project[]>([
   {
     id: "0",
+    title: "Constellate AI",
+    time: "Dec 2025",
+    preview: "/constellate.png",
+    githubUrl: "https://github.com/c0debaberafa/constellate",
+    demoUrl: "https://constellate-ecru.vercel.app/",
+    subheader:
+      "An AI journal-based daily reflection companion. Designed for stream of thought writing first, AI insights next.",
+    description:
+      "What began as a passion-project of mine turned into a startup proof-of-concept. Designed with the philosophy of the Artist's Way by Julia Cameron in mind, it is intended to help the users reconnect with themselves through a zen-typing journaling experience, augmented by AI insights into to the user's mental landscape. It currently supports journal summaries, annotations, and insights provided by an LLM, as well as a continuously evolving user profile that updates with every entry.",
+    skills: ["React", "Next.js", "TypeScript", "Gemini", "Neon", "Prisma"],
+  },
+  {
+    id: "1",
     title: "Trike Sim Dashboard",
     time: "Jun 2025",
     preview: "/trike-sim.png",
@@ -43,7 +56,7 @@ const projects = ref<Project[]>([
     skills: ["Vue 3", "TypeScript", "Nuxt.js", "Pinia", "Playwright", "Vite"],
   },
   {
-    id: "1",
+    id: "2",
     title: "Fred AI",
     time: "Jun 2025",
     preview: "/fred.png",
@@ -57,7 +70,6 @@ const projects = ref<Project[]>([
       "Next.js",
       "React",
       "Tailwind CSS",
-      "shadcn/ui",
       "TypeScript",
       "Supabase",
       "Drizzle ORM",
@@ -66,7 +78,7 @@ const projects = ref<Project[]>([
     ],
   },
   {
-    id: "2",
+    id: "3",
     title: "Traffic Modeling Simulation",
     time: "May 2025",
     preview: "/trike.png",
@@ -74,11 +86,11 @@ const projects = ref<Project[]>([
     subheader:
       "A traffic simulation tool that visualizes tricycle movement in Manila to support urban planning and local transport policy.",
     description:
-      "Here I led both simulation and front-end development of an agent-based system modeling tricycle productivity, terminal usage, and passenger wait times. Built in collaboration with the National Commission on Transport Services, the project aimed to improve their national traffic simulator by introducing localized dynamics for small-scale public vehicles.",
-    skills: ["Python", "JavaScript", "NumPy", "Leaflet", "Data Visualization"],
+      "Here I led both simulation and frontend development of an agent-based system modeling tricycle productivity, terminal usage, and passenger wait times. Built in collaboration with the National Commission on Transport Services, the project aimed to improve their national traffic simulator by introducing localized dynamics for small-scale public vehicles.",
+    skills: ["Python", "JavaScript", "NumPy", "Leaflet"],
   },
   {
-    id: "3",
+    id: "4",
     title: "DevOS",
     time: "May 2025",
     preview: "/devos.png",
@@ -92,7 +104,7 @@ const projects = ref<Project[]>([
     skills: ["Solidity", "Ethereum", "Rust", "Node.js", "React"],
   },
   {
-    id: "4",
+    id: "5",
     title: "PubTracker",
     time: "May 2025",
     preview: "/pubtracker.png",

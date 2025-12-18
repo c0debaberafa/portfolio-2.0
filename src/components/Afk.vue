@@ -25,7 +25,7 @@
       </p>
       <p class="font-mono text-xs text-white/60">
         True to my creative nature, I'm also an artist of all sorts — always
-        doodling next to my design mockups and I recently released my
+        listening to music for inspiration and I recently released my
         <span class="text-white">first single on Spotify</span>! You can check
         it out
         <a
@@ -36,7 +36,7 @@
       </p>
       <p class="font-mono text-xs text-white/60">
         Since I moved to Tokyo recently, I've been striving to master
-        <span class="text-white">Japanese</span>. I currently have N5
+        <span class="text-white">Japanese</span>. I currently have an N5
         certification, and I'm taking lessons for N4/N3. Fluent in my native
         languages <span class="text-white">Filipino, English</span>, and
         conversational in

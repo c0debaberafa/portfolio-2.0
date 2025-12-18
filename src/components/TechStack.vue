@@ -98,14 +98,9 @@ const techItems = ref<TechItem[]>([
   },
   { name: "MySQL", imgSrc: "/techstack/mysql.svg", categories: ["db"] },
   {
-    name: "TensorFlow",
-    imgSrc: "/techstack/tensorflow.svg",
-    categories: ["ai/ml"],
-  },
-  {
     name: "Next.js",
     imgSrc: "/techstack/nextjs.svg",
-    categories: ["frontend", "backend"],
+    categories: ["frontend", "backend", "platform"],
   },
   {
     name: "Supabase",
@@ -168,6 +163,22 @@ const techItems = ref<TechItem[]>([
     name: "Pinia",
     imgSrc: "/techstack/pinia.svg",
     categories: ["frontend"],
+  },
+
+  {
+    name: "TensorFlow",
+    imgSrc: "/techstack/tensorflow.svg",
+    categories: ["ai/ml"],
+  },
+  {
+    name: "PostGreSQL",
+    imgSrc: "/techstack/postgresql.svg",
+    categories: ["db"],
+  },
+  {
+    name: "NumPy",
+    imgSrc: "/techstack/numpy.svg",
+    categories: ["ai/ml"],
   },
 ]);
 const selectedCategory = ref<TechCategory | "all">("all");

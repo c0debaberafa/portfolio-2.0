@@ -80,7 +80,7 @@ const experiences: Experience[] = [
     title: "Admin Assistant I",
     time: "04.2021 - 04.2022",
     description:
-      "Coordinated and deployed official government websites, reaching <span class='text-[#fc3113]'>12M+ page views</span>. Led a small team in producing official multimedia content for nationwide engagement.",
+      "Coordinated and deployed official government websites, reaching <span class='text-[#fc3113]'>12M+ page views</span>. Led a small team in producing official multimedia web content for nationwide engagement.",
     skills: ["JavaScript", "HTML", "CSS", "Adobe Suite"],
     location: ["Philippines"],
   },
