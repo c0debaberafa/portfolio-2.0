@@ -52,7 +52,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
           Experience
         </a>
         <a
-          href="/resume.pdf"
+          href="/Rafa Partosa - Resume.pdf"
           download
           class="text-white/80 hover:text-[#fc3113] transition-colors duration-200 border border-white/20 hover:border-[#fc3113] px-4 py-2 rounded-full flex items-center"
           :style="{ fontFamily: 'JetBrains Mono' }"
